@@ -4,10 +4,10 @@ def integrate_newton(x, f, alg="trap"):
     if alg.strip().lower() == "trap":
         return integrate_newton_trap(x, f)
     # elif alg.strip().lower() == "simp":
-        return integrate_newton_simp(x, f)
+        # return integrate_newton_simp(x, f)
     
 def integrate_newton_trap(x, f):
-    """Intergrate using trapazoid rule.
+    """Intergrate using trapezoid rule.
     |
     Parameters
     ----------
@@ -15,7 +15,7 @@ def integrate_newton_trap(x, f):
         The independent coordinate data.
     f : array_like
         The dependent variable
-        Should have sams shape and length as x
+        Should have same shape and length as x
     |
     Return
     ------
